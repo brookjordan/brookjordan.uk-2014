@@ -2,6 +2,7 @@
 ############
 build/**/*
 temp/**/*
+*.html
 
 site/js/**/*
 site/css/**/*

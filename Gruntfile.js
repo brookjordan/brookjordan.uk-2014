@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
 
+  var DEBUG = false;
   var tasks = {};
 
   task( 'all', [ 'concat', 'uglify', 'sass', 'autoprefixer', ] );
@@ -31,11 +32,13 @@ module.exports = function(grunt) {
       options: {
         sourceMap: true,
         sourceMapIncludeSources: true,
+        mangle: !DEBUG,
+        beautify: DEBUG,
       },
 
       allScripts: {
         src: 'temp/js/**/*.js',
-        dest: 'build/js/main.js',
+        dest: 'build/js/main.min.js',
       },
     },
 
@@ -44,14 +47,17 @@ module.exports = function(grunt) {
     sass: {
       options: {
         sourcemap: 'inline',
+        style: DEBUG ?
+          'expanded' :
+          'compressed',
       },
 
       allStyles: {
         expand: true,
         cwd: 'src/css',
         src: ['**/*.scss'],
-        dest: 'temp/css',
-        ext: '.css',
+        dest: 'temp/css/compiled',
+        ext: '.min.css',
       },
     },
 
@@ -59,17 +65,18 @@ module.exports = function(grunt) {
 
     autoprefixer: {
       options: {
-        browsers: ['last 10 versions', 'ie 8', 'ie 9', ],
+        browsers: ['last 100 versions', 'ie 8', 'ie 9', ],
         map: true,
       },
 
       allStyles: {
         expand: true,
         flatten: true,
-        src: 'temp/css/**/*.css',
+        src: 'temp/css/compiled/**/*.css',
         dest: 'build/css'
       },
     },
+
 
 
     watch: {

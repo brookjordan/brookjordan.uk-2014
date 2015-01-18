@@ -1,0 +1,58 @@
+textarea {
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+
+body {
+	background: grey;
+}
+.wrapper {
+	background: white;
+	max-width: 1400px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+
+
+.row > * {
+	background: red;
+	padding: 12px 0;
+}
+.row > *:nth-child( 7n+1 ) {
+	background: red;
+}
+.row > *:nth-child( 7n+2 ) {
+	background: orange;
+}
+.row > *:nth-child( 7n+3 ) {
+	background: yellow;
+}
+.row > *:nth-child( 7n+4 ) {
+	background: green;
+}
+.row > *:nth-child( 7n+5 ) {
+	background: blue;
+}
+.row > *:nth-child( 7n+6 ) {
+	background: indigo;
+}
+.row > *:nth-child( 7n+7 ) {
+	background: violet;
+}
+
+.box {
+	line-height: 30px;
+	text-align: center;
+	background: black;
+	color: white;
+	overflow: hidden;
+}

@@ -1,0 +1,225 @@
+body {
+	position: relative;
+
+	padding: 12%;
+	padding-top: 3.5em;
+	background-color: white;
+
+	font-size: 1.2em;
+	line-height: 1.4;
+	color: #2c3e50;
+}
+
+.job-company {
+	margin-top: 1.3em;
+}
+
+.job-title {
+	font-size: 1.2em;
+}
+
+.font-subtle {
+	font-size: 0.8em;
+}
+	
+.font-sectionHead{
+	font-size: 1.7em;
+	font-weight: 900;
+	font-family: 'Dosis', 'sans-serif';
+}
+	
+.job-company,
+.job-date,
+.job-title {
+	font-family: 'Dosis', 'sans-serif';
+}
+
+body,
+.font-subtle {
+	font-family: 'Josefin Sans', 'sans-serif';
+}
+
+
+
+
+
+.cf:before,
+.cf:after,
+.bullets:before,
+.bullets:after {
+    content: " ";
+    display: table;
+}
+
+.bullets:after,
+.cf:after {
+    clear: both;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	color: #007dbd;
+	font-weight: 400;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.section {
+	float: left;
+	min-height: 1px;
+}
+
+.is-clearing {
+	clear: both;
+	width: 100%;
+	height: 0;
+}
+
+.contact a {
+	float: left;
+	padding-right: 10%;
+}
+
+
+
+.font-sectionHead {
+	margin-top: 3em;
+
+	font-weight: 600;
+	color: #fc4349;
+	
+}
+.font-sectionHead:first-child {
+	margin-top: 0;
+
+}
+
+.job-head {
+	margin-top: 1.5em;
+}
+
+.job-company {
+	margin-top: 1.3em;
+
+	font-weight: 600;
+	color: #2c3e50;
+}
+p + .job-head .job-company {
+	margin-top: 3em;
+}
+
+.job-date {
+	float: right;
+	clear: both;
+	
+	padding-left: 1.5em;
+
+	line-height: 2.3;
+}
+
+.job-title {
+	margin-top: 1.5em;
+	color: #fc4349;
+}
+.job-head .job-title {
+	margin-top: 0;
+	margin-bottom: 1em;
+
+	border-top: 1px solid #d7dadb;
+}
+
+.font-body {
+	margin-top: 1em;
+}
+.job-head    + .font-body,
+.job-company + .font-body {
+	margin-top: 0;
+}
+
+.font-subtle {
+	color: #d7dadb;
+	font-weight: 400;
+}
+
+.bullets {
+	list-style-type: disc;
+}
+
+.bullets .bullets {
+	list-style-type: circle;
+}
+
+.bullet {
+	float: left;
+	margin-left: 4%;
+}
+
+.single-bullet {
+	width: 96%;
+}
+
+.double-bullet {
+	width: 46%;
+}
+
+.treble-bullet {
+	width: 29.333%;
+}
+
+.print-inline.only {
+	display: none;
+}
+
+.print-block.only {
+	display: none;
+}
+
+.screen-inline {
+	display: inline;
+}
+
+.screen-block {
+	display: block;
+}
+
+
+
+
+@media all and (min-width: 1300px) {
+	body {
+		font-size: 1.4em;
+	}
+}
+
+
+
+
+@media all and (max-width: 650px) {
+	body {
+		padding: 10%;
+		padding-top: 2.5em;
+	}
+	
+	.double-bullet {
+		width: 96%;
+	}
+	.treble-bullet {
+		width: 46%;
+	}
+}
+
+
+
+
+@media all and (max-width: 450px) {
+	.treble-bullet {
+		width: 96%;
+	}
+}

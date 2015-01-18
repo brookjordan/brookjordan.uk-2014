@@ -1,0 +1,28 @@
+html,
+body,
+.manholder {
+	margin: 0;
+	position: relative;
+	background: black;
+	height: 100%;
+	-webkit-user-select: none;
+}
+
+body {
+	font-size: 1.2em;
+}
+
+.manbit {
+	position: absolute;
+}
+
+.text {
+	position: absolute;
+	padding: 10px;
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 100;
+	text-align: center;
+	line-height: 1.5;
+	text-shadow: 0 1px 3px black, 0 1px 3px black, 0 1px 3px black;
+}

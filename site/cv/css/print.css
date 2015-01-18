@@ -1,0 +1,96 @@
+body {
+	font-size: 12pt;
+	padding: 0 10%;
+	padding-top: 3em;
+}
+
+a {
+	color: #2c3e50;
+	text-decoration: none;
+}
+.contact a {
+	width: 33.33%;
+	padding: 0;
+}
+
+.font-sectionHead {
+	margin-top: 2em;
+}
+
+.font-body {
+	margin-top: 0.8em;
+
+}
+
+.print-inline,
+.print-inline.only {
+	display: inline;
+}
+
+.print-block,
+.print-block.only {
+	display: block;
+}
+
+.screen-inline.only {
+	display: none;
+}
+
+.screen-block.only {
+	display: none;
+}
+
+
+
+.definitionlist .job-company {
+	display: inline;
+}
+.definitionlist .job-company::after {
+	content: ' — '
+}
+.definitionlist .job-company.last::after {
+	content: '. '
+}
+
+.definitionlist .font-body {
+	display: none;
+}
+
+
+.definitionlist .job-company {
+	font-weight: 400;
+	font-family: 'Gentium Book Basic', serif;
+}
+
+
+.bullets.print-inline {
+	list-style-type: none;
+	display: inline;
+	padding: 0;
+}
+
+.bullets.print-inline .bullet > p::after {
+	content: ' — ';
+}
+
+/*
+.bullets.print-inline .bullet:last-child > p::before {
+	content: ' and ';
+}
+*/
+
+.bullets.print-inline .bullet:last-child > p::after {
+	content: '. ';
+}
+
+.bullets.print-inline .bullet,
+.bullets.print-inline .bullet > p {
+	display: inline;
+	float: none;
+	width: auto;
+	margin: 0;
+}
+
+.treble-bullet {
+	width: 45%;
+}

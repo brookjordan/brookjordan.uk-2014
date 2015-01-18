@@ -1,0 +1,53 @@
+.job.closed {
+	margin-top: 0;
+}
+.job:not(.closed) + .job.closed {
+	margin-top: 1.5em;
+}
+
+.job,
+.job > * {
+	-webkit-transition: max-height  0.3s  ease-out,
+	                    margin      0.3s  ease-out;
+	   -moz-transition: max-height  0.3s  ease-out,
+	                    margin      0.3s  ease-out;
+	    -ms-transition: max-height  0.3s  ease-out,
+	                    margin      0.3s  ease-out;
+	     -o-transition: max-height  0.3s  ease-out,
+	                    margin      0.3s  ease-out;
+	        transition: max-height  0.3s  ease-out,
+	                    margin      0.3s  ease-out;
+}
+.job.closed,
+.job.closed > * {
+	cursor: hand;
+	cursor: pointer;
+	
+	-webkit-transition: none;
+	   -moz-transition: none;
+	    -ms-transition: none;
+	     -o-transition: none;
+	        transition: none;
+}
+
+.job > * {
+	max-height: 420px;
+}
+.job.closed > :not(h3) {
+	max-height: 0;
+	overflow: hidden;
+	
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.job.closed .job-title:after {
+	content: '\00a0\00a0\00a0\00a0\00a0 + expand +';
+	
+	color: #ddd;
+	font-size: 0.65em;
+	font-family: 'Josefin Sans', 'sans-serif';
+	font-weight: 400;
+}

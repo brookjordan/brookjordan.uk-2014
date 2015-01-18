@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 
   task
     ('all',
-      [ 'concat', 'uglify', 'sass', 'autoprefixer', ])
+      [ 'concat', 'uglify', 'sass', 'autoprefixer', 'copy' ])
 
     ('build',
       'all')
@@ -153,6 +153,33 @@ module.exports = function(grunt) {
 
 
 
+//   .d8888b .d88b.  88888b.  888  888
+//  d88P"   d88""88b 888 "88b 888  888
+//  888     888  888 888  888 888  888
+//  Y88b.   Y88..88P 888 d88P Y88b 888
+//   "Y8888P "Y88P"  88888P"   "Y88888
+//                   888           888
+//                   888      Y8b d88P
+//                   888       "Y88P"
+    copy: {
+      main: {
+        expand: true,
+
+        cwd: 'build/',
+        src: '**/*.*',
+        dest: 'site/',
+      },
+
+      minecraftskinner: {
+        expand: true,
+
+        cwd: 'bower_components/brkjrdn-minecraftskinner/site',
+        src: '**/*',
+        dest: 'site/projects/minecraftskinner',
+      },
+    },
+
+
 //                         888            888
 //                         888            888
 //                         888            888
@@ -208,6 +235,9 @@ module.exports = function(grunt) {
   //  CSS
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
+
+  //  Move stuff
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   //  Watch
   grunt.loadNpmTasks('grunt-contrib-watch');

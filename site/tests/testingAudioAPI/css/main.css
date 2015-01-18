@@ -1,0 +1,10 @@
+.loading {
+	font-size: 0.8em;
+	color: gray;
+}
+.success {
+	color: green;
+}
+.error {
+	color: red;
+}

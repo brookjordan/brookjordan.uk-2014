@@ -1,0 +1,38 @@
+a {
+	color: #2c3e50;
+	text-decoration: none;
+}
+
+.show-printonly {
+	display: inline;
+}
+
+.print-inline {
+	list-style-type: none;
+	display: inline;
+	padding: 0;
+}
+
+.print-inline .bullet > p::after {
+	content: ',';
+}
+
+.print-inline .bullet:last-child > p::before {
+	content: 'and ';
+}
+
+.print-inline .bullet:last-child > p::after {
+	content: '.';
+}
+
+.print-inline .bullet,
+.print-inline .bullet > p {
+	display: inline;
+	float: none;
+	width: auto;
+	margin: 0;
+}
+
+.treble-bullet {
+	width: 45%;
+}

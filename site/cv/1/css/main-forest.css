@@ -1,0 +1,135 @@
+body {
+	font-family: 'Gentium Book Basic', serif;
+
+	padding: 3em 15%;
+
+	font-size: 1.2em;
+	line-height: 1.4;
+	color: #6d8b83;
+}
+
+a {
+	color: #185f91;
+	font-weight: 400;
+}
+
+.font-sectionHead,
+.job-company,
+.job-date,
+.job-title {
+	font-family: 'PT Sans Caption', sans-serif;
+}
+
+
+
+.font-sectionHead {
+	margin-top: 3em;
+
+	font-weight: 600;
+	font-size: 1.4em;
+	color: #71402e;
+
+}
+.font-sectionHead:first-child {
+	margin-top: 0;
+
+}
+
+.job-head {
+	margin-top: 1.5em;
+}
+
+.job-company {
+	margin-top: 1.5em;
+
+	color: #194c3e;
+}
+.job-head .job-company {
+	margin-top: 0;
+}
+
+.job-date {
+	float: right;
+	clear: both;
+
+	font-size: 0.8em;
+	line-height: 2.3;
+
+	color: #ceb8b1;
+}
+
+.job-title {
+	margin-top: 1.5em;
+
+	font-size: 1.2em;
+	color: #71402e;
+}
+.job-head .job-title {
+	margin-top: 0;
+	margin-bottom: 1em;
+
+	border-top: 1px solid #bed7d1;
+}
+
+.font-body {
+	margin-top: 1em;
+
+}
+.job-head    + .font-body,
+.job-company + .font-body {
+	margin-top: 0;
+
+}
+
+.bullets {
+	list-style-type: disc;
+	overflow: hidden;
+	padding-left: 1.3em;
+}
+
+.bullets .bullets {
+	list-style-type: circle;
+}
+
+.bullet {
+	float: left;
+}
+
+.single-bullet {
+	width: 100%;
+}
+
+.double-bullet {
+	width: 50%;
+}
+
+.treble-bullet {
+	width: 33.333%;
+}
+
+
+
+
+@media all and (max-width: 650px) {
+	body {
+		padding: 2em 10%;
+		font-size: 1em;
+	}
+
+	.treble-bullet {
+		width: 50%;
+	}
+}
+
+
+
+
+@media all and (max-width: 400px) {
+	.double-bullet {
+		width: 100%;
+	}
+
+	.treble-bullet {
+		width: 100%;
+	}
+}

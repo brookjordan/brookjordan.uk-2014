@@ -1,0 +1,21 @@
+html,
+body,
+.manholder {
+	margin: 0;
+	position: relative;
+	background: black;
+	height: 100%;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+}
+
+body {
+	font-size: 1.2em;
+}
+
+div {
+	position: absolute;
+	top: 0;
+	left: 0;
+}

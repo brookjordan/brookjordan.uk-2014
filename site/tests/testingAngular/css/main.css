@@ -1,0 +1,172 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+form {
+	margin: 0 auto;
+	padding: 2em;
+}
+
+.clear {
+	clear: both;
+}
+
+.dateItem {
+	float: left;
+
+	height: 3em;
+	line-height: 3em;
+	padding: 0 1em;
+	margin: .5em;
+
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	background-image: linear-gradient( to bottom right, #111, transparent );
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.4s;
+	background-color: #444;
+}
+.dateItem:hover {
+	background-color: #888;
+}
+
+
+.tournament {
+	min-height: 50px;
+}
+
+.tournament-noTournaments,
+.tournament-head {
+	background: black;
+	background: linear-gradient( to bottom right, #111, #444 );
+
+	height: 100px;
+	line-height: 100px;
+
+	color: white;
+	overflow: hidden;
+	padding: 0 5%;
+}
+
+.tournament-noTournaments,
+.tournament-name {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.3em;
+	letter-spacing: 0.15em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: 300;
+	text-shadow:	0 0 10px black,
+					0 0 15px black;
+}
+
+
+.tournamentBody {
+	display: none;
+}
+.Active {
+	display: none;
+}
+
+
+.tournament-logo {
+	width: 15%;
+	max-width: 100px;
+	min-width: 60px;
+	vertical-align: middle;
+	padding-right: 2%;
+}
+
+
+.tournament-name {
+	max-width: 50%;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 50%;
+}
+
+.tournament-year {
+	background: linear-gradient( to top right, #222, #333 );
+	float: right;
+	padding: 0 1em;
+	border: 2px solid white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	height: 60px;
+	line-height: 60px;
+	margin: 18px 0;
+}
+
+.round-head {
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+	box-shadow: 0 0 5px #CCC;
+}
+
+
+.daymessage {
+	text-align: center;
+	background: #CCC;
+	color: #333;
+	margin-top: 0;
+	padding: .5em 0;
+}
+
+
+.match {
+	overflow: hidden;
+	text-align: center;
+	padding: 0 2%;
+	padding: 1em 5%;
+
+	background: linear-gradient( to right, #FFF 25%, #EEE 90%, #DDD );
+}
+.match:nth-child(2n) {
+	background: linear-gradient( to left, #FFF 25%, #EEE 90%, #DDD );
+}
+.match:last-child {
+	margin-bottom: 1em;
+}
+
+
+.match-vs {
+	overflow: hidden;
+	text-align: center;
+	padding: 0 2%;
+	padding-bottom: 2em;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+}
+
+.match-order {
+	padding-right: 2em;
+	float: left;
+	margin: 0;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+}
+
+.team {
+	margin: 0;
+	max-width: 40%;
+	overflow: hidden;
+}
+.teamA {
+	float: left;
+	text-align: left;
+}
+.teamB {
+	float: right;
+	text-align: right;
+}
+
+.player+.player:before {
+	content: ' & ';
+}

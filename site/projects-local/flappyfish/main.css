@@ -1,0 +1,46 @@
+html, body, h1 {
+	margin: 0;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	     -o-user-select: none;
+	        user-select: none;
+}
+html {
+	position:	relative;
+	width:		100%;
+	height:		100%;
+	background:	#eee;
+}
+body {
+	position: absolute;
+	background:	#fff;
+}
+.wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.score {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: #ddd;
+	font-size: 3em;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 50px;
+}
+
+.hiScore {
+	display: inline-block;
+	font-size: 0.6em;
+	color: #bbb;
+	color: rgba( 128, 128, 128, 0.4 );
+	vertical-align: top;
+}

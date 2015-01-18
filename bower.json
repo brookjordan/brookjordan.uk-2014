@@ -1,0 +1,29 @@
+{
+  "name": "brookjordan.uk",
+  "version": "0.1.0",
+  "homepage": "http://brookjordan.uk/",
+  "authors": [
+    "brookjordan"
+  ],
+  "description": "Website for Brook Jordan",
+  "main": "site/index.html",
+  "keywords": [
+    "Brook",
+    "jordan",
+    "brookjordan",
+    "brk",
+    "brkjrdn"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "brkjrdn-minecraftskinner": "*"
+  }
+}

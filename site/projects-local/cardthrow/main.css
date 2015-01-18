@@ -1,0 +1,60 @@
+html, body {
+	position: relative;
+	z-index: 0;
+
+	height: 100%;
+	margin: 0;
+
+	background-color: #DDD;
+	overflow: hidden;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.stack {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	width: 240px;
+	height: 310px;
+	padding: 20px;
+	border: 5px dashed gray;
+	border-radius: 25px;
+	box-sizing: border-box;
+
+	font-size: 2.5em;
+	font-weight: 900;
+	font-family: sans-serif;
+	line-height: 200px;
+	text-align: center;
+	color: #ccc;
+	color: rgba( 0, 0, 0, 0.3 );
+
+}
+
+.card {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	box-sizing: border-box;
+	width: 85%;
+	height: 85%;
+
+	border: 5px solid white;
+	border-radius: 5px;
+	border-bottom-width: 15px;
+	background-color: #FFF;
+	background-size: cover;
+	background-position: 50% 50%;
+	box-shadow: 0 0 1px black;
+}
+.holding {
+	box-shadow: 0 0 20px black;
+	z-index: 9999999 !important;
+}

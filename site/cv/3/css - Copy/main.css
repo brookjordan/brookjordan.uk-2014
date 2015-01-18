@@ -1,0 +1,195 @@
+body {
+	position: relative;
+
+	padding: 12%;
+	padding-top: 3.5em;
+	background-color: #fff;
+
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 1.5em;
+	line-height: 1.4;
+	color: #2c3e50;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	color: #007dbd;
+	font-weight: 400;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.section {
+	float: left;
+	min-height: 1px;
+}
+
+.is-clearing {
+	clear: both;
+	width: 100%;
+	height: 0;
+}
+
+.contact a {
+	float: left;
+	padding-right: 10%;
+}
+	
+.font-sectionHead,
+.job-company,
+.job-date,
+.job-title {
+	font-family: 'PT Sans Caption', sans-serif;
+}
+
+
+
+.font-sectionHead {
+	margin-top: 3em;
+
+	font-weight: 600;
+	font-size: 1.4em;
+	color: #fc4349;
+	
+}
+.font-sectionHead:first-child {
+	margin-top: 0;
+
+}
+
+.job-head {
+	margin-top: 1.5em;
+}
+
+.job-company {
+	margin-top: 1.3em;
+
+	font-weight: 600;
+	color: #2c3e50;
+}
+p + .job-head .job-company {
+	margin-top: 3em;
+}
+
+.job-date {
+	float: right;
+	clear: both;
+	
+	padding-left: 1.5em;
+
+	line-height: 2.3;
+}
+
+.job-title {
+	margin-top: 1.5em;
+
+	font-size: 1.2em;
+	color: #fc4349;
+}
+.job-head .job-title {
+	margin-top: 0;
+	margin-bottom: 1em;
+
+	border-top: 1px solid #d7dadb;
+}
+
+.font-body {
+	margin-top: 1em;
+
+}
+.job-head    + .font-body,
+.job-company + .font-body {
+	margin-top: 0;
+
+}
+
+.font-subtle {
+	color: #d7dadb;
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+.bullets {
+	list-style-type: disc;
+	overflow: hidden;
+	padding-left: 1.3em;
+}
+
+.bullets .bullets {
+	list-style-type: circle;
+}
+
+.bullet {
+	float: left;
+	margin-left: 5%;
+}
+
+.single-bullet {
+	width: 95%;
+}
+
+.double-bullet {
+	width: 45%;
+}
+
+.treble-bullet {
+	width: 28.333%;
+}
+
+.print-inline.only {
+	display: none;
+}
+
+.print-block.only {
+	display: none;
+}
+
+.screen-inline {
+	display: inline;
+}
+
+.screen-block {
+	display: block;
+}
+
+
+
+
+@media all and (max-width: 1300px) {
+	body {
+		font-size: 1.2em;
+	}
+}
+
+
+
+
+@media all and (max-width: 650px) {
+	body {
+		padding: 10%;
+		padding-top: 2.5em;
+	}
+	
+	.double-bullet {
+		width: 95%;
+	}
+	.treble-bullet {
+		width: 45%;
+	}
+}
+
+
+
+
+@media all and (max-width: 450px) {
+	.treble-bullet {
+		width: 95%;
+	}
+}

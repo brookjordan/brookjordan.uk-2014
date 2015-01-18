@@ -1,17 +1,64 @@
 module.exports = function(grunt) {
-
-  var DEBUG = false;
   var tasks = {};
+  var aTask;
 
-  task( 'all', [ 'concat', 'uglify', 'sass', 'autoprefixer', ] );
-  task( 'dev', [ tasks.all, 'watch' ] );
 
-  // Project configuration.
+
+
+
+//                    888    888    d8b
+//                    888    888    Y8P
+//                    888    888
+//  .d8888b   .d88b.  888888 888888 888 88888b.   .d88b.  .d8888b
+//  88K      d8P  Y8b 888    888    888 888 "88b d88P"88b 88K
+//  "Y8888b. 88888888 888    888    888 888  888 888  888 "Y8888b.
+//       X88 Y8b.     Y88b.  Y88b.  888 888  888 Y88b 888      X88
+//   88888P'  "Y8888   "Y888  "Y888 888 888  888  "Y88888  88888P'
+//                                                    888
+//                                               Y8b d88P
+//                                                "Y88P"
+  var DEBUG = false;
+
+  task
+    ('all',
+      [ 'concat', 'uglify', 'sass', 'autoprefixer', ])
+
+    ('build',
+      'all')
+
+    ('dev',
+      [ tasks.all, 'watch' ]);
+
+
+
+
+
+
+
+
+
+//  d8b          d8b 888
+//  Y8P          Y8P 888
+//                   888
+//  888 88888b.  888 888888
+//  888 888 "88b 888 888
+//  888 888  888 888 888
+//  888 888  888 888 Y88b.
+//  888 888  888 888  "Y888
+
   grunt.initConfig({
 
     pkg: grunt.file.readJSON( 'package.json' ),
 
 
+//                                              888
+//                                              888
+//                                              888
+//   .d8888b .d88b.  88888b.   .d8888b  8888b.  888888
+//  d88P"   d88""88b 888 "88b d88P"        "88b 888
+//  888     888  888 888  888 888      .d888888 888
+//  Y88b.   Y88..88P 888  888 Y88b.    888  888 Y88b.
+//   "Y8888P "Y88P"  888  888  "Y8888P "Y888888  "Y888
 
     concat: {
       options: {
@@ -28,6 +75,17 @@ module.exports = function(grunt) {
 
 
 
+//                    888 d8b  .d888
+//                    888 Y8P d88P"
+//                    888     888
+//  888  888  .d88b.  888 888 888888 888  888
+//  888  888 d88P"88b 888 888 888    888  888
+//  888  888 888  888 888 888 888    888  888
+//  Y88b 888 Y88b 888 888 888 888    Y88b 888
+//   "Y88888  "Y88888 888 888 888     "Y88888
+//                888                     888
+//           Y8b d88P                Y8b d88P
+//            "Y88P"                  "Y88P"
     uglify: {
       options: {
         sourceMap: true,
@@ -43,6 +101,12 @@ module.exports = function(grunt) {
     },
 
 
+
+//  .d8888b   8888b.  .d8888b  .d8888b
+//  88K          "88b 88K      88K
+//  "Y8888b. .d888888 "Y8888b. "Y8888b.
+//       X88 888  888      X88      X88
+//   88888P' "Y888888  88888P'  88888P'
 
     sass: {
       options: {
@@ -63,6 +127,16 @@ module.exports = function(grunt) {
 
 
 
+//                    888                                      .d888 d8b
+//                    888                                     d88P"  Y8P
+//                    888                                     888
+//   8888b.  888  888 888888 .d88b.  88888b.  888d888 .d88b.  888888 888 888  888  .d88b.  888d888
+//      "88b 888  888 888   d88""88b 888 "88b 888P"  d8P  Y8b 888    888 `Y8bd8P' d8P  Y8b 888P"
+//  .d888888 888  888 888   888  888 888  888 888    88888888 888    888   X88K   88888888 888
+//  888  888 Y88b 888 Y88b. Y88..88P 888 d88P 888    Y8b.     888    888 .d8""8b. Y8b.     888
+//  "Y888888  "Y88888  "Y888 "Y88P"  88888P"  888     "Y8888  888    888 888  888  "Y8888  888
+//                                   888
+//                                   888
     autoprefixer: {
       options: {
         browsers: ['last 100 versions', 'ie 8', 'ie 9', ],
@@ -78,6 +152,15 @@ module.exports = function(grunt) {
     },
 
 
+
+//                         888            888
+//                         888            888
+//                         888            888
+//  888  888  888  8888b.  888888 .d8888b 88888b.
+//  888  888  888     "88b 888   d88P"    888 "88b
+//  888  888  888 .d888888 888   888      888  888
+//  Y88b 888 d88P 888  888 Y88b. Y88b.    888  888
+//   "Y8888888P"  "Y888888  "Y888 "Y8888P 888  888
 
     watch: {
       styles: {
@@ -105,6 +188,19 @@ module.exports = function(grunt) {
 
 
 
+
+
+
+
+//  888                        888
+//  888                        888
+//  888                        888
+//  888  .d88b.   8888b.   .d88888
+//  888 d88""88b     "88b d88" 888
+//  888 888  888 .d888888 888  888
+//  888 Y88..88P 888  888 Y88b 888
+//  888  "Y88P"  "Y888888  "Y88888
+
   //  Javascript
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -118,19 +214,28 @@ module.exports = function(grunt) {
 
 
 
-  // Default task(s).
-  grunt.registerTask('dev',   tasks.dev );
-  grunt.registerTask('build', tasks.all );
+//                           d8b          888
+//                           Y8P          888
+//                                        888
+//  888d888 .d88b.   .d88b.  888 .d8888b  888888 .d88b.  888d888
+//  888P"  d8P  Y8b d88P"88b 888 88K      888   d8P  Y8b 888P"
+//  888    88888888 888  888 888 "Y8888b. 888   88888888 888
+//  888    Y8b.     Y88b 888 888      X88 Y88b. Y8b.     888
+//  888     "Y8888   "Y88888 888  88888P'  "Y888 "Y8888  888
+//                       888
+//                  Y8b d88P
+//                   "Y88P"
+  for ( aTask in tasks ) {
+    grunt.registerTask( aTask, tasks[ aTask ] );
+  }
+
+
 
 
 
 
 
   //  GRUNT MANIP FUNCTIONS //
-
-
-
-
 
   function task ( taskName, newTasks, prune ) {
     var list;
@@ -141,7 +246,7 @@ module.exports = function(grunt) {
     }
     //  If the newTasks isn't a string or an array, return an empty array
     if (  typeof newTasks === 'string' ) {
-      newTasks = tasks[newTasks];
+      newTasks = tasks[ newTasks ];
     }
     if (  Object.prototype.toString.call( newTasks ) !== '[object Array]' ) {
       tasks[ taskName ] = [];
@@ -152,34 +257,43 @@ module.exports = function(grunt) {
     tasks[ taskName ] = prune ?
       cleanList( list ) :
       list;
+
+    return task;
   }
 
   function mergeLists ( list1, list2 ) {
     var i = 0;
     var listItem;
 
-    var newList = typeof list1 === 'string' ?
-      [list1] :
-      list1.slice(0);
+    if ( typeof list1 === 'string' || typeof list1 === 'number' ) {
+      list1 = [list1];
+    } else if ( Object.prototype.toString.call( list1 ) === '[object Array]' ) {
+      list1 = list1.slice(0);
+    } else {
+      throw( '"List" needs to be a String or an Array. Recieved: ' + typeof list1 );
+    }
 
-    list2 = typeof list2 === 'string' ?
-      [list2] :
-      list2;
+    if ( typeof list2 === 'string' || typeof list2 === 'number' ) {
+      list2 = [list2];
+    } else if ( Object.prototype.toString.call( list2 ) === '[object Array]' ) {
+      list2 = list2.slice(0);
+    } else {
+      throw( '"List" needs to be a String or an Array. Recieved: ' + typeof list2 );
+    }
 
     for (; i < list2.length; i+=1 ) {
       listItem = list2[i];
 
-      if ( typeof listItem === 'string' ) {
-        newList.push( listItem );
+      if ( typeof listItem === 'string' || typeof listItem === 'number' ) {
+        list1.push( '' + listItem );
 
+      } else if ( Object.prototype.toString.call( listItem ) === '[object Array]' ) {
+        list1 = mergeLists( list1, listItem );
       }
 
-      if ( Object.prototype.toString.call( listItem ) === '[object Array]' ) {
-        newList = mergeLists( newList, listItem );
-      }
     }
 
-    return newList;
+    return list1;
   }
 
   function cleanList ( oldList ) {

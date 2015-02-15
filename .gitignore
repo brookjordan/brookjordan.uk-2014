@@ -7,11 +7,14 @@ temp/**/*
 node_modules/**/*
 bower_components/**/*
 site/projects/**/*
-
-
+site/friends/**/*
 
 .sass-cache/**/*
 .sublime-grunt.cache
+
+
+
+
 
 # Compiled source #
 ###################

@@ -1,4 +1,7 @@
-<?php include '../_head.php'; ?>
+<?php 
+	$title = "Banana";
+	include '../_head.php';
+?>
 
 <script>
 	buildDraggy({

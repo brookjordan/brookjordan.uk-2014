@@ -1,0 +1,27 @@
+{
+  "name": "colourclock",
+  "version": "2.0.0",
+  "description": "A simple clock which changes colour based on the current date.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "brkjrdn",
+    "brook",
+    "jordan",
+    "colour",
+    "clock",
+    "color"
+  ],
+  "author": "Brook Jordan",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-css-url-embed": "^1.5.1",
+    "grunt-processhtml": "^0.3.7",
+    "load-grunt-tasks": "^3.1.0"
+  }
+}

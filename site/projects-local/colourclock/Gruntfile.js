@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 
 			dist: {
 				files: {
-					'colourclock/nonmin.html': ['index.html', ],
+					'colourclock/nonmin/index.html': ['index.html', ],
 				},
 			},
 		},
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 
 			dist: {
 				files: {
-					'colourclock/index.html': 'colourclock/nonmin.html',
+					'colourclock/index.html': 'colourclock/nonmin/index.html',
 				},
 			},
 		},

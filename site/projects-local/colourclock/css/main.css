@@ -3,7 +3,7 @@ html, body, h1, h2, p {
 
 	margin: 0;
 
-	font-family: 'Josefin Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Playfair Display', serif;
 	font-weight: 100;
 	text-align: center;
 }
@@ -20,8 +20,18 @@ body {
 	width: 100%;
 }
 
+.t h1 {
+	text-shadow: 0 3px 10px rgba(0,0,0,.4);
+}
+
+.tr {
+	color: white;
+}
+
 .timebg,
-.datebg {
+.datebg,
+.grungebg,
+.grungebgw {
 	position: absolute;
 	z-index: -1;
 	top: 0;
@@ -31,6 +41,16 @@ body {
 	height: 100%;
 
 	transition: background .95s;
+}
+.grungebg {
+	background: url("../i/back-tex.png");
+	background-size: cover;
+	transform: translateZ(0);
+}
+.grungebgw {
+	background: url("../i/back-tex-w.png");
+	background-size: cover;
+	transform: translateZ(0);
 }
 
 h1, h2, p {
@@ -54,7 +74,7 @@ html:before {
 
 h1 {
 	margin-top: .2em;
-	margin-bottom: .1em;
+	margin-bottom: .4em;
 
 	line-height: 30px;
 	font-size: 30px;
@@ -62,7 +82,6 @@ h1 {
 
 p, h2 {
 	line-height: 12px;
-	font-size: 12px;
 
 	opacity: .4;
 }
@@ -73,12 +92,19 @@ h2 {
 	width: 200px;
 	margin: 0 auto;
 
+	font-size: 12px;
 	font-weight: 300;
 	text-align: right;
 }
 
 h2 span + span {
 	padding-left: .2em;
+}
+
+p {
+	font-size: 9px;
+	font-weight: 900;
+	letter-spacing: .1em;
 }
 
 .w1, .w2,
@@ -153,10 +179,13 @@ article:before, article:after {
 	}
 	p, h2 {
 		line-height: 18px;
-		font-size: 18px;
 	}
 	h2 {
 		width: 302px;
+		font-size: 18px;
+	}
+	p {
+		font-size: 13.5px;
 	}
 	article {
 		margin-top: -64px;
@@ -170,10 +199,13 @@ article:before, article:after {
 	}
 	p, h2 {
 		line-height: 24px;
-		font-size: 24px;
 	}
 	h2 {
 		width: 402px;
+		font-size: 24px;
+	}
+	p {
+		font-size: 18px;
 	}
 	article {
 		margin-top: -84px;
@@ -187,10 +219,13 @@ article:before, article:after {
 	}
 	p, h2 {
 		line-height: 30px;
-		font-size: 30px;
 	}
 	h2 {
 		width: 502px;
+		font-size: 30px;
+	}
+	p {
+		font-size: 22.5px;
 	}
 	article {
 		margin-top: -103px;
@@ -204,10 +239,13 @@ article:before, article:after {
 	}
 	p, h2 {
 		line-height: 36px;
-		font-size: 36px;
 	}
 	h2 {
 		width: 604px;
+		font-size: 36px;
+	}
+	p {
+		font-size: 27px;
 	}
 	article {
 		margin-top: -125px;
@@ -221,10 +259,13 @@ article:before, article:after {
 	}
 	p, h2 {
 		line-height: 48px;
-		font-size: 48px;
 	}
 	h2 {
 		width: 806px;
+		font-size: 48px;
+	}
+	p {
+		font-size: 36px;
 	}
 	article {
 		margin-top: -165px;

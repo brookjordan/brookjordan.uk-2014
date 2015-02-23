@@ -4,7 +4,7 @@
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 100;
-  src: local('Josefin Sans Thin'), local('JosefinSans-Thin'), url('../fonts/Josefin_Sans-100.woff') format('woff');
+  src: local('CooperHewitt Thin'), local('CooperHewitt-Thin'), url('../fonts/CooperHewitt-Thin.otf') format('otf');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -16,6 +16,6 @@
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url('../fonts/Josefin_Sans-300.woff') format('woff');
+  src: local('CooperHewitt Light'), local('CooperHewitt-Light'), url('../fonts/CooperHewitt-Light.otf') format('otf');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }

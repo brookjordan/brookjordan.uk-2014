@@ -25,7 +25,7 @@ var bS = document.body.style;
 
 var currentTime;
 
-var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 updateDisplay();
 
@@ -52,9 +52,9 @@ function updateDisplay () {
 
 	//	Text colour
 	if ( time.rgb.r + time.rgb.g + time.rgb.b + date.rgb.r + date.rgb.g + date.rgb.b < 255*3 ) {
-		tE.style.color = 'white';
+		tE.className = 't tr';
 	} else {
-		tE.style.color = 'black';
+		tE.className = 't';
 	}
 
 	//	Hex values
@@ -98,12 +98,6 @@ function getTime () {
 	MinsUnitsElt.innerHTML = pad( m, 2 ).split('')[1];
 	SecondsTensElt.innerHTML = pad( s, 2 ).split('')[0];
 	SecondsUnitsElt.innerHTML = pad( s, 2 ).split('')[1];
-
-	if ( ( rgb.r + rgb.g + rgb.b ) < 383 ) {
-		tE.style.color = 'white';
-	} else {
-		tE.style.color = 'black';
-	}
 
 	return {
 		hex: hex,
